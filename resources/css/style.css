@@ -1,0 +1,146 @@
+:root{
+    --primary-color: #5fbaa7;
+    --color-orange: #FFA500;
+    --color-black: 	#000000;
+    --color-white: #FFFFFF;
+    --color-gray: #333333;
+    --color-blue-less: #060632;
+    --color-border: #302e2e;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;    /* 10px/16px = 62.5% -> 1rem = 10px */
+}
+
+body {
+    font-family: "Roboto",sans-serif;
+    background-image: linear-gradient(to bottom, rgba(11, 15, 73, 0.5), rgba(44, 52, 73, 0.4)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 2rem;
+}
+
+.money-img{
+    width: 15rem;
+}
+
+.header{
+    color: var(--primary-color);
+    font-size: 3.5rem;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    font-weight: bold;
+
+}
+.paragraph{
+    color: var(--color-white);
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-bottom: 3rem;
+}
+
+.currency {
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.currency select {
+
+    background: transparent;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right .2em top 50%, 0 0;
+    background-size: .6em auto, 100%;
+    border: 1px solid var(--color-border);
+    border-radius: .5rem;
+    padding: 1rem 2rem 1rem 1rem;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.currency select > * {
+    background-color: var(--color-gray);
+    background-color: var(--color-blue-less);
+  }
+
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+
+
+.currency input {
+
+    border: 0;
+    background: transparent;
+    font-size: 2.5rem;
+    text-align: right;
+    color: var(--color-white);
+    width: 35rem;
+    box-sizing: border-box;
+    text-transform: none;
+
+}
+
+
+.middle {
+    color: var(--color-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.middle .rate {
+    border: 1px solid var(--color-border);
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    padding: 0 1rem;
+    margin: 2.5rem 1.5rem 3rem 2.5rem;
+}
+
+/* Problem : showing border */
+select:focus, input:focus, button:focus { 
+    outline: 0;
+}
+
+/* Media Queries */
+
+@media all and (max-width: 50em) {
+    
+
+    /* .header{
+        font-size: 4em;
+    }
+    .paragraph{
+        font-size: 3em;
+    } */
+
+}

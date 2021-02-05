@@ -1,1 +1,1 @@
-# Exchage-rate
+https://exchangecurrencyrate.netlify.app/
